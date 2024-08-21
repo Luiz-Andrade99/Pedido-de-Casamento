@@ -20,12 +20,17 @@ body {
 header {
     padding: 40px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo branco transparente */
+    border-radius: 5px; /* Cantos arredondados */
 }
 
 /* Faz com que o main ocupe o espaço restante disponível */
 main {
     flex: 1; /* Faz com que o main ocupe o espaço restante disponível */
     text-align: center; /* Centraliza o texto dentro do main */
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo branco transparente */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno */
 }
 
 /* Estilo para a pergunta */
@@ -45,6 +50,8 @@ main {
 footer {
     padding: 20px; /* Adiciona um pouco de padding ao footer */
     text-align: center; /* Centraliza o texto dentro do footer */
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo branco transparente */
+    border-radius: 5px; /* Cantos arredondados */
 }
 
 /* Estilo para o texto do footer */
