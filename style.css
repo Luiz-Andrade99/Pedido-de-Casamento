@@ -18,7 +18,7 @@ body {
 
 /* Estilo para o header */
 header {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -42,7 +42,6 @@ main {
 
 /* Estilo para o footer */
 footer {
-
     /* Certifique-se de que o footer está no final da página */
 }
 
