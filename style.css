@@ -65,9 +65,17 @@ footer {
 /* Estilo para o texto do footer */
 footer p {
     background-color: rgba(255, 255, 255, 0.7); /* Fundo branco transparente atrás do texto */
-    display: inline-block; /* Faz com que o fundo transparente se ajuste ao tamanho do texto */
+    display: block; /* Garante que o fundo cubra toda a largura do texto */
     padding: 10px; /* Espaçamento interno */
     border-radius: 5px; /* Cantos arredondados */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Estilo para o título do footer */
+footer .footer-text {
+    font-size: 25px; /* Ajusta o tamanho da fonte se desejar */
+    color: #0e0e0eea; /* Cor do texto (ajuste conforme necessário) */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
 }
 
 /* Estilo para os corações no texto */
