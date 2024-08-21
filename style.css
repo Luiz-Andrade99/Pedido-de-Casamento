@@ -83,6 +83,13 @@ html, body {
     padding: 0;
 }
 
+/* Faz com que o body e o html ocupem a altura total da tela */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* Container flexível para empurrar o footer para o final */
 body {
     display: flex;
