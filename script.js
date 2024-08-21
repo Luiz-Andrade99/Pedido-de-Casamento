@@ -39,5 +39,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     changeBackgroundImage(); // Inicializa com a primeira imagem
-    setInterval(changeBackgroundImage, 2500); // Troca de imagem a cada 2,5 segundos
+    setInterval(changeBackgroundImage, 5000); // Troca de imagem a cada 2,5 segundos
 });
