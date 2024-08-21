@@ -18,7 +18,7 @@ body {
 
 /* Estilo para o header */
 header {
-    padding: 25px;
+    padding: 40px;
     text-align: center;
 }
 
@@ -30,7 +30,7 @@ main {
 
 /* Estilo para a pergunta */
 .question {
-    margin-bottom: 20px; /* Espaçamento abaixo da pergunta */
+    margin-bottom: 25px; /* Espaçamento abaixo da pergunta */
     text-align: center; /* Garante que o texto da pergunta esteja centralizado */
 }
 
