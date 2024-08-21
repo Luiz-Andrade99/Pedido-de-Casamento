@@ -30,5 +30,16 @@ footer {
     background-color: #f4f4f4;
     padding: 10px;
     text-align: center;
-    /* Remover position: fixed e bottom: 0 */
+}
+
+/* Estilo para o texto do footer */
+.footer-text {
+    color: #000; /* Cor do texto (ajuste se necessário) */
+}
+
+/* Estilo para os corações no texto */
+.footer-text::before,
+.footer-text::after {
+    content: '\2764'; /* Código Unicode para coração vermelho */
+    color: red;
 }
