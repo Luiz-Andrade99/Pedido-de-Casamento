@@ -43,7 +43,7 @@ main {
 
 /* Estilo para o footer */
 footer {
-    padding: 10px; /* Adiciona um pouco de padding ao footer */
+    padding: 20px; /* Adiciona um pouco de padding ao footer */
     text-align: center; /* Centraliza o texto dentro do footer */
 }
 
@@ -71,5 +71,5 @@ footer {
     text-align: center;
     font-size: 1.5em;
     color: red; /* Ajuste a cor conforme necessário */
-    margin-top: 20px;
+    margin-top: 25px;
 }
