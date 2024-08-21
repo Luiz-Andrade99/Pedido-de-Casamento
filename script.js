@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
             noButton.style.left = `${Math.min(x, window.innerWidth - noButton.offsetWidth)}px`;
             noButton.style.top = `${Math.min(y, window.innerHeight - noButton.offsetHeight)}px`;
         });
+
+        noButton.addEventListener('click', () => {
+            // Mostrar caixa de diálogo se o botão NÃO for clicado
+            alert('VOCÊ QUIS DIZER SIM! NÉ?');
+        });
     } else {
         console.error('Botão NÃO não encontrado');
     }
@@ -35,6 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function changeBackgroundImage() {
         document.body.style.backgroundImage = `url('${images[currentIndex]}')`;
+        document.body.style.backgroundSize = 'cover'; // Ajusta a imagem para cobrir toda a tela
+        document.body.style.backgroundPosition = 'center'; // Centraliza a imagem
+        document.body.style.backgroundRepeat = 'no-repeat'; // Evita repetição da imagem
         currentIndex = (currentIndex + 1) % images.length;
     }
 
