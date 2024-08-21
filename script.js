@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Configuração para a troca de imagens de fundo
-    const images = ['images/NOSSA FOTO.jpg', 'images/NOSSA FOTO2.jpg']; // Caminhos para suas imagens
+    const images = ['NOSSA FOTO.jpg', 'NOSSA FOTO2.jpg']; // Caminhos para suas imagens
     let currentIndex = 0;
 
     function changeBackgroundImage() {
@@ -38,5 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
         currentIndex = (currentIndex + 1) % images.length;
     }
 
+    changeBackgroundImage(); // Inicializa com a primeira imagem
     setInterval(changeBackgroundImage, 2500); // Troca de imagem a cada 2,5 segundos
 });
