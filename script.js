@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const yesButton = document.getElementById('yes');
     if (yesButton) {
         yesButton.addEventListener('click', () => {
-            window.location.href = 'URL_DO_SEU_VIDEO'; // Substitua pelo URL do seu vídeo
+            window.location.href = 'Ousado Amor.mp4'; // Substitua pelo URL do seu vídeo
         });
     } else {
         console.error('Botão SIM não encontrado');
