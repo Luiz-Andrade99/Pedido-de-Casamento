@@ -50,7 +50,7 @@ footer {
 /* Estilo para o texto do footer */
 .footer-text {
     color: #f00000e0; /* Cor do texto (ajuste conforme necessário) */
-    font-size: 18px; /* Ajuste o tamanho da fonte se desejar */
+    font-size: 25px; /* Ajuste o tamanho da fonte se desejar */
 }
 
 /* Estilo para os corações no texto */
@@ -69,7 +69,7 @@ footer {
 .show {
     display: block;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2.5em;
     color: red; /* Ajuste a cor conforme necessário */
-    margin-top: 25px;
+    margin-top: 20px;
 }
