@@ -14,7 +14,7 @@ body {
 
 /* Estilo para o header */
 header {
-    background-color: #0bdaff;
+    background-color: #f4f4f4;
     padding: 10px;
     text-align: center;
 }
@@ -37,16 +37,18 @@ footer {
     background-color: #f4f4f4;
     padding: 10px;
     text-align: center;
+    /* Certifique-se de que o footer está no final da página */
 }
 
 /* Estilo para o texto do footer */
 .footer-text {
-    color: #000; /* Cor do texto (ajuste se necessário) */
+    color: #000; /* Cor do texto (ajuste conforme necessário) */
+    font-size: 18px; /* Ajuste o tamanho da fonte se desejar */
 }
 
 /* Estilo para os corações no texto */
 .footer-text::before,
 .footer-text::after {
     content: '\2764'; /* Código Unicode para coração vermelho */
-    color: red;
+    color: red; /* Definindo a cor do coração como vermelho */
 }
