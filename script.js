@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Mouseover no botão NÃO');
             // Move o botão NÃO quando o cursor está sobre ele
             const maxOffset = 100; // Máximo deslocamento do botão
-            const x = Math.random() * (window.innerWidth - noButton.offsetWidth);
-            const y = Math.random() * (window.innerHeight - noButton.offsetHeight);
+            const x = Math.random() * (window.innerWidth - noButton.offsetWidth - maxOffset);
+            const y = Math.random() * (window.innerHeight - noButton.offsetHeight - maxOffset);
 
             noButton.style.position = 'absolute';
-            noButton.style.left = ${Math.min(x, window.innerWidth - noButton.offsetWidth)}px;
-            noButton.style.top = ${Math.min(y, window.innerHeight - noButton.offsetHeight)}px;
+            noButton.style.left = `${Math.min(x, window.innerWidth - noButton.offsetWidth)}px`;
+            noButton.style.top = `${Math.min(y, window.innerHeight - noButton.offsetHeight)}px`;
         });
     } else {
         console.error('Botão NÃO não encontrado');
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
 
     function changeBackgroundImage() {
-        document.body.style.backgroundImage = url('${images[currentIndex]}');
+        document.body.style.backgroundImage = `url('${images[currentIndex]}')`;
         currentIndex = (currentIndex + 1) % images.length;
     }
 
