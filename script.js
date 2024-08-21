@@ -3,9 +3,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Adiciona a funcionalidade ao botão SIM
     const yesButton = document.getElementById('yes');
+    const message = document.getElementById('message'); // Seleciona o elemento de mensagem
     if (yesButton) {
         yesButton.addEventListener('click', () => {
-            window.location.href = 'Ousado Amor.mp4'; // Substitua pelo URL do seu vídeo
+            if (message) {
+                message.classList.remove('hidden'); // Mostra o texto
+                message.classList.add('show'); // Adiciona a classe para exibir o texto
+            }
+            setTimeout(() => {
+                window.location.href = 'Ousado Amor.mp4'; // Substitua pelo URL do seu vídeo
+            }, 1000); // Espera 1 segundo antes de redirecionar
         });
     } else {
         console.error('Botão SIM não encontrado');

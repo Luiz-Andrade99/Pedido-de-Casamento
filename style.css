@@ -59,3 +59,17 @@ footer {
     content: '\2764'; /* Código Unicode para coração vermelho */
     color: red; /* Definindo a cor do coração como vermelho */
 }
+
+/* CSS para ocultar o texto */
+.hidden {
+    display: none;
+}
+
+/* CSS para o texto exibido */
+.show {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: red; /* Ajuste a cor conforme necessário */
+    margin-top: 20px;
+}
