@@ -1,65 +1,75 @@
-.film-strip {
+/* Faz com que o body e o html ocupem a altura total da tela */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container flexível para empurrar o footer para o final */
+body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 20px 0;
-    background-color: black;
-    position: relative;
-    overflow: hidden;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz com que a imagem não se mova ao rolar */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
 }
 
-.film-frame {
-    width: 150px;
-    height: 100px;
-    margin: 0 10px;
-    padding: 10px;
-    background-color: white;
-    border: 2px solid black;
-    box-shadow: inset 0 0 0 2px black;
-    overflow: hidden;
-    position: relative;
+/* Estilo para o header */
+header {
+    padding: 40px;
+    text-align: center;
 }
 
-.film-frame img {
-    width: 100%;
-    height: auto;
+/* Faz com que o main ocupe o espaço restante disponível */
+main {
+    flex: 1; /* Faz com que o main ocupe o espaço restante disponível */
+    text-align: center; /* Centraliza o texto dentro do main */
+}
+
+/* Estilo para a pergunta */
+.question {
+    margin-bottom: 25px; /* Espaçamento abaixo da pergunta */
+    text-align: center; /* Garante que o texto da pergunta esteja centralizado */
+}
+
+/* Estilo para os botões */
+.options {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 25px; /* Espaçamento entre os botões */
+}
+
+/* Estilo para o footer */
+footer {
+    padding: 20px; /* Adiciona um pouco de padding ao footer */
+    text-align: center; /* Centraliza o texto dentro do footer */
+}
+
+/* Estilo para o texto do footer */
+.footer-text {
+    color: #f00000e0; /* Cor do texto (ajuste conforme necessário) */
+    font-size: 25px; /* Ajuste o tamanho da fonte se desejar */
+}
+
+/* Estilo para os corações no texto */
+.footer-text::before,
+.footer-text::after {
+    content: '\2764'; /* Código Unicode para coração vermelho */
+    color: red; /* Definindo a cor do coração como vermelho */
+}
+
+/* CSS para ocultar o texto */
+.hidden {
+    display: none;
+}
+
+/* CSS para o texto exibido */
+.show {
     display: block;
-}
-
-.film-strip::before,
-.film-strip::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 40px;
-    background-color: black;
-    z-index: 1;
-}
-
-.film-strip::before {
-    left: -100%;
-}
-
-.film-strip::after {
-    right: -100%;
-}
-
-.film-strip::before {
-    border-top: 10px solid white;
-    border-bottom: 10px solid white;
-    background: black;
-    background-size: 40px 40px;
-    background-image: linear-gradient(to right, transparent 25%, white 25%, white 50%, transparent 50%, transparent 75%, white 75%);
-    border-right: 2px solid black;
-}
-
-.film-strip::after {
-    border-top: 10px solid white;
-    border-bottom: 10px solid white;
-    background: black;
-    background-size: 40px 40px;
-    background-image: linear-gradient(to right, transparent 25%, white 25%, white 50%, transparent 50%, transparent 75%, white 75%);
-    border-left: 2px solid black;
+    text-align: center;
+    font-size: 2.5em;
+    color: red; /* Ajuste a cor conforme necessário */
+    margin-top: 20px;
 }
