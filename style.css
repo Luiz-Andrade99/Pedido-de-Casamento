@@ -24,6 +24,7 @@ header {
 
 /* Faz com que o main ocupe o espaço restante disponível */
 main {
+    flex: 1; /* Faz com que o main ocupe o espaço restante disponível */
     text-align: center; /* Centraliza o texto dentro do main */
 }
 
@@ -42,7 +43,8 @@ main {
 
 /* Estilo para o footer */
 footer {
-    /* Certifique-se de que o footer está no final da página */
+    padding: 10px; /* Adiciona um pouco de padding ao footer */
+    text-align: center; /* Centraliza o texto dentro do footer */
 }
 
 /* Estilo para o texto do footer */
@@ -70,29 +72,4 @@ footer {
     font-size: 1.5em;
     color: red; /* Ajuste a cor conforme necessário */
     margin-top: 20px;
-}
-
-/* Faz com que o body e o html ocupem a altura total da tela */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/* Faz com que o body e o html ocupem a altura total da tela */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/* Container flexível para empurrar o footer para o final */
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    background-size: cover; /* Faz com que a imagem cubra toda a área */
-    background-position: center; /* Centraliza a imagem */
-    background-attachment: fixed; /* Faz com que a imagem não se mova ao rolar */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
 }
