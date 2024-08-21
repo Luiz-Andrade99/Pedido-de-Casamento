@@ -14,7 +14,7 @@ body {
 
 /* Estilo para o header */
 header {
-    background-color: #f4f4f4;
+    background-color: #0bdaff;
     padding: 10px;
     text-align: center;
 }
@@ -23,6 +23,13 @@ header {
 main {
     flex: 1;
     padding: 20px;
+}
+
+/* Estilo para os botões */
+.options {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 20px; /* Espaçamento entre os botões */
 }
 
 /* Estilo para o footer */
