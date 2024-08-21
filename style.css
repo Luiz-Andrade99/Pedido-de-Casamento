@@ -18,7 +18,7 @@ body {
 
 /* Estilo para o header */
 header {
-    padding: 20px;
+    padding: 25px;
     text-align: center;
 }
 
@@ -37,7 +37,7 @@ main {
 .options {
     display: flex;
     justify-content: center; /* Centraliza os botões horizontalmente */
-    gap: 20px; /* Espaçamento entre os botões */
+    gap: 25px; /* Espaçamento entre os botões */
 }
 
 /* Estilo para o footer */
@@ -47,7 +47,7 @@ footer {
 
 /* Estilo para o texto do footer */
 .footer-text {
-    color: #000; /* Cor do texto (ajuste conforme necessário) */
+    color: #f00000e0; /* Cor do texto (ajuste conforme necessário) */
     font-size: 18px; /* Ajuste o tamanho da fonte se desejar */
 }
 
