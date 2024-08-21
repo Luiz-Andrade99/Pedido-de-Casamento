@@ -1,75 +1,39 @@
-/* Faz com que o body e o html ocupem a altura total da tela */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Página carregada e script.js funcionando!');
 
-/* Container flexível para empurrar o footer para o final */
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-}
+    // Adiciona a funcionalidade ao botão SIM
+    const yesButton = document.getElementById('yes');
+    const message = document.getElementById('message'); // Seleciona o elemento de mensagem
 
-/* Estilo para o header */
-header {
-    background-color: #f4f4f4;
-    padding: 10px;
-    text-align: center;
-}
+    if (yesButton) {
+        yesButton.addEventListener('click', () => {
+            if (message) {
+                message.classList.remove('hidden'); // Mostra o texto
+                message.classList.add('show'); // Adiciona a classe para exibir o texto
+            }
+            setTimeout(() => {
+                window.location.href = 'Ousado Amor.mp4'; // Substitua pelo URL do seu vídeo
+            }, 1000); // Espera 1 segundo antes de redirecionar
+        });
+    } else {
+        console.error('Botão SIM não encontrado');
+    }
 
-/* Faz com que o main ocupe o espaço restante disponível */
-main {
-    flex: 1;
-    padding: 20px;
-    text-align: center; /* Centraliza o texto dentro do main */
-}
+    // Adiciona a funcionalidade ao botão NÃO
+    const noButton = document.getElementById('no');
+    if (noButton) {
+        noButton.addEventListener('mouseover', () => {
+            console.log('Mouseover no botão NÃO');
+            // Move o botão NÃO quando o cursor está sobre ele
+            const maxOffset = 100; // Máximo deslocamento do botão
+            const x = Math.random() * (window.innerWidth - noButton.offsetWidth);
+            const y = Math.random() * (window.innerHeight - noButton.offsetHeight);
 
-/* Estilo para a pergunta */
-.question {
-    margin-bottom: 20px; /* Espaçamento abaixo da pergunta */
-    text-align: center; /* Garante que o texto da pergunta esteja centralizado */
-}
-
-/* Estilo para os botões */
-.options {
-    display: flex;
-    justify-content: center; /* Centraliza os botões horizontalmente */
-    gap: 20px; /* Espaçamento entre os botões */
-}
-
-/* Estilo para o footer */
-footer {
-    background-color: #f4f4f4;
-    padding: 10px;
-    text-align: center;
-    /* Certifique-se de que o footer está no final da página */
-}
-
-/* Estilo para o texto do footer */
-.footer-text {
-    color: #000; /* Cor do texto (ajuste conforme necessário) */
-    font-size: 18px; /* Ajuste o tamanho da fonte se desejar */
-}
-
-/* Estilo para os corações no texto */
-.footer-text::before,
-.footer-text::after {
-    content: '\2764'; /* Código Unicode para coração vermelho */
-    color: red; /* Definindo a cor do coração como vermelho */
-}
-
-/* CSS para ocultar o texto */
-.hidden {
-    display: none;
-}
-
-/* CSS para o texto exibido */
-.show {
-    display: block;
-    text-align: center;
-    font-size: 1.5em;
-    color: red; /* Ajuste a cor conforme necessário */
-    margin-top: 20px;
-}
+            noButton.style.position = 'absolute';
+            noButton.style.left = `${Math.min(x, window.innerWidth - noButton.offsetWidth)}px`;
+            noButton.style.top = `${Math.min(y, window.innerHeight - noButton.offsetHeight)}px`;
+        });
+    } else {
+        console.error('Botão NÃO não encontrado');
+    }
+});
