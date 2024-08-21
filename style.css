@@ -73,9 +73,9 @@ footer p {
 
 /* Estilo para o título do footer */
 footer .footer-text {
-    font-size: 25px; /* Ajusta o tamanho da fonte se desejar */
+    font-size: 30px; /* Ajusta o tamanho da fonte se desejar */
     color: #0e0e0eea; /* Cor do texto (ajuste conforme necessário) */
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
 }
 
 /* Estilo para os corações no texto */
