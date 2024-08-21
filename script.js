@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Configuração para a troca de imagens de fundo
-    const images = ['NOSSA FOTO.jpg', 'NOSSA FOTO2.jpg']; // Caminhos para suas imagens
+    const images = ['NOSSA FOTO.jpg', 'NOSSA FOTO 2.jpg']; // Caminhos para suas imagens
     let currentIndex = 0;
 
     function changeBackgroundImage() {

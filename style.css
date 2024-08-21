@@ -77,3 +77,21 @@ footer {
     color: red; /* Ajuste a cor conforme necessário */
     margin-top: 20px;
 }
+
+/* Faz com que o body e o html ocupem a altura total da tela */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container flexível para empurrar o footer para o final */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz com que a imagem não se mova ao rolar */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
