@@ -24,8 +24,6 @@ header {
 
 /* Faz com que o main ocupe o espaço restante disponível */
 main {
-    flex: 1;
-    padding: 20px;
     text-align: center; /* Centraliza o texto dentro do main */
 }
 
@@ -44,8 +42,7 @@ main {
 
 /* Estilo para o footer */
 footer {
-    padding: 10px;
-    text-align: center;
+
     /* Certifique-se de que o footer está no final da página */
 }
 
