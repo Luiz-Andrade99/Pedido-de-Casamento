@@ -72,3 +72,18 @@ footer {
     font-size: 2.5em;
     color: rgb(17, 17, 17); 
 }
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Altura do quadrado */
+    width: 100%; /* Largura do quadrado, ou você pode definir uma largura específica */
+    background-color: transparent; /* Pode ajustar o fundo do quadrado */
+    overflow: hidden; /* Para garantir que as imagens fiquem dentro do quadrado */
+}
+
+.photo-container img.photo {
+    height: 100%; /* Faz com que a imagem preencha a altura do quadrado */
+    width: auto; /* Mantém a proporção da imagem */
+}
