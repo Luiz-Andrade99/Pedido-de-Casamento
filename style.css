@@ -1,24 +1,34 @@
-body {
-    font-family: Arial, sans-serif;
+/* Faz com que o body e o html ocupem a altura total da tela */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
+/* Container flexível para empurrar o footer para o final */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o header */
 header {
     background-color: #f4f4f4;
     padding: 10px;
     text-align: center;
 }
 
+/* Faz com que o main ocupe o espaço restante disponível */
 main {
+    flex: 1;
     padding: 20px;
 }
 
+/* Estilo para o footer */
 footer {
     background-color: #f4f4f4;
     padding: 10px;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    /* Remover position: fixed e bottom: 0 */
 }
