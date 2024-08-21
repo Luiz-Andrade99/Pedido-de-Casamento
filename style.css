@@ -49,7 +49,7 @@ footer {
 
 /* Estilo para o texto do footer */
 .footer-text {
-    color: #f00000e0; /* Cor do texto (ajuste conforme necessário) */
+    color: #0e0e0eea; /* Cor do texto (ajuste conforme necessário) */
     font-size: 25px; /* Ajuste o tamanho da fonte se desejar */
 }
 
@@ -70,6 +70,5 @@ footer {
     display: block;
     text-align: center;
     font-size: 2.5em;
-    color: red; /* Ajuste a cor conforme necessário */
-    margin-top: 20px;
+    color: rgb(17, 17, 17); 
 }
