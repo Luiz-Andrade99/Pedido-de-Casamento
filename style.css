@@ -23,6 +23,13 @@ header {
 main {
     flex: 1;
     padding: 20px;
+    text-align: center; /* Centraliza o texto dentro do main */
+}
+
+/* Estilo para a pergunta */
+.question {
+    margin-bottom: 20px; /* Espaçamento abaixo da pergunta */
+    text-align: center; /* Garante que o texto da pergunta esteja centralizado */
 }
 
 /* Estilo para os botões */
